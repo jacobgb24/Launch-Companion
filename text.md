@@ -1,4 +1,29 @@
 ---
 ---
-### bold
-* bullet point
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Launch Companion by jacobgb24</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Privacy Policy for Launch Companion</h1>
+        <p></p>
+        
+      </header>
+    </div>
+  </body>
+</html>
+
+###bold
+*bullet
