@@ -1,63 +1,9 @@
-@font-face {
-  font-family: 'Noto Sans';
-  font-weight: 400;
-  font-style: normal;
-  src: url('../fonts/Noto-Sans-regular/Noto-Sans-regular.eot');
-  src: url('../fonts/Noto-Sans-regular/Noto-Sans-regular.eot?#iefix') format('embedded-opentype'),
-       local('Noto Sans'),
-       local('Noto-Sans-regular'),
-       url('../fonts/Noto-Sans-regular/Noto-Sans-regular.woff2') format('woff2'),
-       url('../fonts/Noto-Sans-regular/Noto-Sans-regular.woff') format('woff'),
-       url('../fonts/Noto-Sans-regular/Noto-Sans-regular.ttf') format('truetype'),
-       url('../fonts/Noto-Sans-regular/Noto-Sans-regular.svg#NotoSans') format('svg');
-}
-
-@font-face {
-  font-family: 'Noto Sans';
-  font-weight: 700;
-  font-style: normal;
-  src: url('../fonts/Noto-Sans-700/Noto-Sans-700.eot');
-  src: url('../fonts/Noto-Sans-700/Noto-Sans-700.eot?#iefix') format('embedded-opentype'),
-       local('Noto Sans Bold'),
-       local('Noto-Sans-700'),
-       url('../fonts/Noto-Sans-700/Noto-Sans-700.woff2') format('woff2'),
-       url('../fonts/Noto-Sans-700/Noto-Sans-700.woff') format('woff'),
-       url('../fonts/Noto-Sans-700/Noto-Sans-700.ttf') format('truetype'),
-       url('../fonts/Noto-Sans-700/Noto-Sans-700.svg#NotoSans') format('svg');
-}
-
-@font-face {
-  font-family: 'Noto Sans';
-  font-weight: 400;
-  font-style: italic;
-  src: url('../fonts/Noto-Sans-italic/Noto-Sans-italic.eot');
-  src: url('../fonts/Noto-Sans-italic/Noto-Sans-italic.eot?#iefix') format('embedded-opentype'),
-       local('Noto Sans Italic'),
-       local('Noto-Sans-italic'),
-       url('../fonts/Noto-Sans-italic/Noto-Sans-italic.woff2') format('woff2'),
-       url('../fonts/Noto-Sans-italic/Noto-Sans-italic.woff') format('woff'),
-       url('../fonts/Noto-Sans-italic/Noto-Sans-italic.ttf') format('truetype'),
-       url('../fonts/Noto-Sans-italic/Noto-Sans-italic.svg#NotoSans') format('svg');
-}
-
-@font-face {
-  font-family: 'Noto Sans';
-  font-weight: 700;
-  font-style: italic;
-  src: url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.eot');
-  src: url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.eot?#iefix') format('embedded-opentype'),
-       local('Noto Sans Bold Italic'),
-       local('Noto-Sans-700italic'),
-       url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.woff2') format('woff2'),
-       url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.woff') format('woff'),
-       url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.ttf') format('truetype'),
-       url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.svg#NotoSans') format('svg');
-}
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 
 body {
   background-color: #fff;
   padding:50px;
-  font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 15px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#727272;
   font-weight:400;
 }
@@ -158,7 +104,7 @@ img {
 }
 
 header {
-  width:270px;
+  width:360px;
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
@@ -168,10 +114,7 @@ header ul {
   list-style:none;
   height:40px;
   padding:0;
-  background: #f4f4f4;
-  border-radius:5px;
-  border:1px solid #e0e0e0;
-  width:270px;
+  width:360px;
 }
 
 header li {
@@ -181,20 +124,14 @@ header li {
   height:40px;
 }
 
-header li:first-child a {
-  border-radius:5px 0 0 5px;
-}
-
-header li:last-child a {
-  border-radius:0 5px 5px 0;
-}
 
 header ul a {
   line-height:1;
-  font-size:11px;
-  color:#999;
+  font-size:16px;
+  color:#393939;
   display:block;
   text-align:center;
+  line-height: 1.2;
   padding-top:6px;
   height:34px;
 }
@@ -212,16 +149,11 @@ strong {
   font-weight:700;
 }
 
-header ul li + li + li {
+header ul li + li + li + li {
   border-right:none;
   width:89px;
 }
 
-header ul a strong {
-  font-size:14px;
-  display:block;
-  color:#222;
-}
 
 section {
   width:500px;
@@ -246,13 +178,17 @@ footer {
   position:fixed;
   bottom:50px;
   -webkit-font-smoothing:subpixel-antialiased;
+
 }
 
-@media print, screen and (max-width: 960px) {
+@media print, screen  {
 
   div.wrapper {
     width:auto;
     margin:0;
+  }
+  body{
+    width: 1000px;
   }
 
   header, section, footer {
@@ -283,7 +219,7 @@ footer {
   }
 }
 
-@media print, screen and (max-width: 720px) {
+@media print, screen and (max-width: 900px) {
   body {
     word-wrap:break-word;
   }
@@ -310,8 +246,9 @@ footer {
     width:99%;
   }
 
+
   header li, header ul li + li + li {
-    width:33%;
+    width:20%;
   }
 }
 
