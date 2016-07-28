@@ -111,7 +111,6 @@ header {
 }
 
 header ul {
-  list-style:none;
   height:50px;
   padding:0;
   display: table;
@@ -127,7 +126,6 @@ header li {
 
 
 header ul a {
-  line-height:1;
   font-size:16px;
   color:#393939;
   display: table-cell;
