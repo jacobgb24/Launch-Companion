@@ -112,8 +112,9 @@ header {
 
 header ul {
   list-style:none;
-  height:40px;
+  height:50px;
   padding:0;
+  display: table;
   width:360px;
 }
 
@@ -129,10 +130,13 @@ header ul a {
   line-height:1;
   font-size:16px;
   color:#393939;
-  display:block;
+  display: table-cell;
+  vertical-align: middle;
   text-align:center;
   line-height: 1.2;
   padding-top:8px;
+  padding-left: 1px;
+  padding-right: 1px
   padding-bottom: 8px;
   height:50px;
 }
@@ -247,10 +251,7 @@ footer {
   header ul  {
     width:99%;
   }
-  header li{
-    width: 70px;
-  }
-  header ul a{
+  header ul a {
     font-size: 14px;
   }
 
